@@ -7,7 +7,7 @@
 
 $name = "Wakako";
 
-if ($name = "Wakako") {
+if ($name == "Wakako") {
   echo "私は" . $name . "です";
 } else {
   echo "あなたの名前ではありません";
@@ -31,6 +31,7 @@ $fruits に配列で好きなフルーツを5個代入し、foreach文で順番�
 $fruits = array("ringo","nashi","mikan","sakuranbo","ichigo");
  foreach($fruits as $fruit){
      echo $fruit;
+     echo "\n";
  }
  
  /*
@@ -42,10 +43,11 @@ $start = 1;
 /* for文の終わりの値を定義する */
 $end = 100;
 
-for($i = $start; $i < $end; $i++){
+for($i = $start; $i <= $end; $i++){
 
   // 5で割り切れたら{}内を実行する
   if($i % 5 == 0){
     echo $i;
+    echo "\n";
   }
 }
